@@ -100,6 +100,7 @@ def convert_textile_to_markdown(textile, what)
   # gfm dropped backtick_code_block extension
   # https://github.com/jgm/pandoc/commit/3a22fbd11bba805140b1963a583a11b4fa1169a2
   command = [
+    'LANG=C ',
     'pandoc',
     '--eol=lf',
     '--atx-headers',
